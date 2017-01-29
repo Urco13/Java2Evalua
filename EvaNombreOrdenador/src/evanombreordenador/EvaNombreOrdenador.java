@@ -15,7 +15,10 @@ public class EvaNombreOrdenador {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      
+       String cadena;
+        NombreOrdenador codigo = new NombreOrdenador("PC5515");
+//        cadena=codigo.getCodigo();
+//        System.out.println(cadena);
     }
     
 }
