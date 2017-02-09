@@ -10,11 +10,12 @@ package evaapivehiculos;
  * @author dam115
  */
 public abstract class Vehiculos {
+    protected double ingreso;
     private String matricula;
     private String anoDeCompra;
     private String marca;
     private static int totalVehiculos=0;
-    private static double ingresos=0;
+    private static double totalIngresos=0;
     
     public Vehiculos(String matricula, String anoDeCompra, String marca){
         matricula=this.matricula;
@@ -37,8 +38,15 @@ public abstract class Vehiculos {
         return totalVehiculos;
     }
     
-    public void setIngresos(double ingresos){
-        ingresos+=this.ingresos;
+     public  double verIngresos(){
+        return this.ingreso;
+    }
+     
+    public  void calcularIngresoTotal(double cantidadDeDinero){
+        totalIngresos+=cantidadDeDinero;
+    }
+    public double verIngresoTotal(){
+        return this.totalIngresos;
     }
     //metodos set
 //    public void setMatricula(String matricula){
